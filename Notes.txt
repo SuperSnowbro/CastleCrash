@@ -1,0 +1,32 @@
+--- EDITOR ----
+matrix
+delete box
+create matrix from selection
+rotate matrix (tosta)
+multiplayer editing
+toggle collision with building
+undo
+one instanced mesh per team/player (dynamic material changing - maybe we want the castle to become transparent for some weapons)
+
+
+--- MECHANICS ---
+fast building vs customization?
+destroy if no sustain?
+attacks have to be suuuuper slow
+
+
+--- WEAPONS ---
+Grapple catapult!
+
+--- PERFORMANCE / PROJECT MAINTENANCE ---
+Projectiles - no shadows
+Projectile pooling
+No big assets until it's time - fuck graphics, only gameplay. Visual stuff can be ok for prototyping but only if it's light.
+
+
+--- TECH DEBT ---
+Camera moves with cursor... should be much more sensitive and only active while holding a button
+Make a proper pawn - hold right click to rotate camera, fake mouse cursor with adjustable sensitivity, left click to spawn - wasd movement
+rename stuff - arrow (and many others)
+delete useless stuff
+relocate content properly
