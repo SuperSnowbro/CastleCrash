@@ -1,3 +1,5 @@
+GAME NAME: SHATTERFARE
+
 --- EDITOR ----
 matrix
 delete box
@@ -7,26 +9,37 @@ multiplayer editing
 toggle collision with building
 undo
 one instanced mesh per team/player (dynamic material changing - maybe we want the castle to become transparent for some weapons)
-
+Specular compared to axis (place axis around)
 
 --- MECHANICS ---
 fast building vs customization?
 destroy if no sustain?
 attacks have to be suuuuper slow
-
+Weapons: tempo vs value! Tempo = precise, fast, reliable attacks, value = spread, slow (delayed), avoidable but devastating
+Weapons: some keep the player busy for value, some have a very slow reload (forced tiers?)
+Weapons that disable a weapon will force moving around without the reload mumbo jumbo (may just include them)
 
 --- WEAPONS ---
 Grapple catapult!
+Sniper Rifle?
+Playable drones (value on information or sabotage?)
+Deployable drones (launch missle, select destination, will permanently shoot around destination)
+Light gun, high fire rate, bread and butter
+
 
 --- PERFORMANCE / PROJECT MAINTENANCE ---
 Projectiles - no shadows
 Projectile pooling
 No big assets until it's time - fuck graphics, only gameplay. Visual stuff can be ok for prototyping but only if it's light.
-
+Saves merge that kills overlapping meshes
+Position of cubes should be defined by a simple integer
 
 --- TECH DEBT ---
 Camera moves with cursor... should be much more sensitive and only active while holding a button
 Make a proper pawn - hold right click to rotate camera, fake mouse cursor with adjustable sensitivity, left click to spawn - wasd movement
 rename stuff - arrow (and many others)
 delete useless stuff
+Sphere collision for projectiles
 relocate content properly
+if performance bites: marching cube research, ask @John Alcatraz, look up tutorials for minecraft (in unity or any engine) https://blackflux.wordpress.com/2014/02/23/meshing-in-voxel-engines-part-1/   --- best voxel algorithm: dual cotouring https://pdfs.semanticscholar.org/e9e3/1ff64a19b2ea70e8dc25e4bbca685fa125ab.pdf?_ga=2.261631053.1700072344.1503640427-1627040403.1502950331
+quick solution to the above: collect transforms into a single integer (xxxyyyzzz) and split the world grid into multiple instanced meshes (up to -totest- instances each)
