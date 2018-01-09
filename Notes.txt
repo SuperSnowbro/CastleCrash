@@ -2,6 +2,7 @@ GAME NAME: SHATTERFARE
 
 --- EDITOR ----
 matrix
+non spawning area with default structures to grab with dynamic matrices (actually you can even just add that on click)
 delete box
 create matrix from selection
 rotate matrix (tosta)
@@ -12,10 +13,11 @@ one instanced mesh per team/player (dynamic material changing - maybe we want th
 Specular compared to axis (place axis around)
 
 --- MECHANICS ---
+le bandierine?
 fast building vs customization?
 destroy if no sustain?
 attacks have to be suuuuper slow
-Weapons: tempo vs value! Tempo = precise, fast, reliable attacks, value = spread, slow (delayed), avoidable but devastating
+Weapons: tempo vs value! Tempo = precise, fast, unpredictable attacks, value = spread, slow/delayed, predictable but devastating
 Weapons: some keep the player busy for value, some have a very slow reload (forced tiers?)
 Weapons that disable a weapon will force moving around without the reload mumbo jumbo (may just include them)
 
@@ -24,7 +26,7 @@ Grapple catapult!
 Sniper Rifle?
 Playable drones (value on information or sabotage?)
 Deployable drones (launch missle, select destination, will permanently shoot around destination)
-Light gun, high fire rate, bread and butter
+Light gun, high fire rate, bread and butter (should we have this?)
 
 
 --- PERFORMANCE / PROJECT MAINTENANCE ---
@@ -41,6 +43,7 @@ rename stuff - arrow (and many others)
 delete useless stuff
 Sphere collision for projectiles
 relocate content properly
+tiling should be an integer...
 save integers, replicate integers (or bytes)
 if performance bites: marching cube research, ask @John Alcatraz, look up tutorials for minecraft (in unity or any engine) https://blackflux.wordpress.com/2014/02/23/meshing-in-voxel-engines-part-1/   --- best voxel algorithm: dual cotouring https://pdfs.semanticscholar.org/e9e3/1ff64a19b2ea70e8dc25e4bbca685fa125ab.pdf?_ga=2.261631053.1700072344.1503640427-1627040403.1502950331
 quick solution to the above: collect transforms into a single integer (xxxyyyzzz) and split the world grid into multiple instanced meshes (up to -totest- instances each)
