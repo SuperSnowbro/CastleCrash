@@ -1,14 +1,15 @@
 GAME NAME: SHATTERFARE
 
 --- EDITOR ----
-matrix
+max box clone for matrix 
+matrix - shift + 3/4 clicks otherwise you don't fuck it up
 non spawning area with default structures to grab with dynamic matrices (actually you can even just add that on click)
 delete box
 create matrix from selection
 rotate matrix (tosta)
 multiplayer editing
 toggle collision with building
-undo
+undo + redo
 one instanced mesh per team/player (dynamic material changing - maybe we want the castle to become transparent for some weapons)
 Specular compared to axis (place axis around)
 
@@ -30,6 +31,7 @@ Light gun, high fire rate, bread and butter (should we have this?)
 
 
 --- PERFORMANCE / PROJECT MAINTENANCE ---
+Collision channels
 Projectiles - no shadows
 Projectile pooling
 No big assets until it's time - fuck graphics, only gameplay. Visual stuff can be ok for prototyping but only if it's light.
@@ -37,8 +39,7 @@ Saves merge that kills overlapping meshes
 Position of cubes should be defined by a simple integer
 
 --- TECH DEBT ---
-Camera moves with cursor... should be much more sensitive and only active while holding a button
-Make a proper pawn - hold right click to rotate camera, fake mouse cursor with adjustable sensitivity, left click to spawn - wasd movement
+dynamic matrices - plane should be created on first click (allow doing the thing on every thing!)
 rename stuff - arrow (and many others)
 delete useless stuff
 Sphere collision for projectiles
