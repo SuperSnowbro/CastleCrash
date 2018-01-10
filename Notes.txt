@@ -14,7 +14,8 @@ one instanced mesh per team/player (dynamic material changing - maybe we want th
 Specular compared to axis (place axis around)
 
 --- MECHANICS ---
-le bandierine?
+le bandierine? sono i cristalli piccoli. I generatori servono a
+Players should be able to jump on top of one another to reach places (very useful when castle is broken)
 fast building vs customization?
 destroy if no sustain?
 attacks have to be suuuuper slow
@@ -28,6 +29,7 @@ Sniper Rifle?
 Playable drones (value on information or sabotage?)
 Deployable drones (launch missle, select destination, will permanently shoot around destination)
 Light gun, high fire rate, bread and butter (should we have this?)
+big ass lazors/meteors that push inside the castle gradually kamehameha style
 
 
 --- PERFORMANCE / PROJECT MAINTENANCE ---
@@ -41,6 +43,7 @@ Position of cubes should be defined by a simple integer
 --- TECH DEBT ---
 dynamic matrices - plane should be created on first click (allow doing the thing on every thing!)
 rename stuff - arrow (and many others)
+remove vars not needed all around the class via function inside function
 delete useless stuff
 Sphere collision for projectiles
 relocate content properly
