@@ -30,7 +30,7 @@ Playable drones (value on information or sabotage?)
 Deployable drones (launch missle, select destination, will permanently shoot around destination)
 Light gun, high fire rate, bread and butter (should we have this?)
 big ass lazors/meteors that push inside the castle gradually kamehameha style
-
+?create weapons as in minecraft? 
 
 --- PERFORMANCE / PROJECT MAINTENANCE ---
 Collision channels
@@ -50,4 +50,10 @@ relocate content properly
 tiling should be an integer...
 save integers, replicate integers (or bytes)
 if performance bites: marching cube research, ask @John Alcatraz, look up tutorials for minecraft (in unity or any engine) https://blackflux.wordpress.com/2014/02/23/meshing-in-voxel-engines-part-1/   --- best voxel algorithm: dual cotouring https://pdfs.semanticscholar.org/e9e3/1ff64a19b2ea70e8dc25e4bbca685fa125ab.pdf?_ga=2.261631053.1700072344.1503640427-1627040403.1502950331
-quick solution to the above: collect transforms into a single integer (xxxyyyzzz) and split the world grid into multiple instanced meshes (up to -totest- instances each)
+quick solution to the above: collect transforms into a single byte array or integer (xxxyyyzzz) and split the world grid into multiple instanced meshes (up to -totest- instances each)
+boolean names should be bMyBoolean and not MyBoolean
+
+
+--- LONG LIVE THE KING ---
+Customizable cube material / mod support
+
