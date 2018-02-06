@@ -53,6 +53,10 @@ if performance bites: marching cube research, ask @John Alcatraz, look up tutori
 quick solution to the above: collect transforms into a single byte array or integer (xxxyyyzzz) and split the world grid into multiple instanced meshes (up to -totest- instances each)
 boolean names should be bMyBoolean and not MyBoolean
 
+REFACTOR: PRECALCULATE EVERYTHING
+optimization should only run on layer of mesh and go async from one another (remove top z shit)
+optimizations should queue up or at least not stack too many times
+optimizations should go for x64 or x256
 
 --- LONG LIVE THE KING ---
 Customizable cube material / mod support
